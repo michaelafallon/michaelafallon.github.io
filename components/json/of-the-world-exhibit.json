@@ -5,24 +5,16 @@
   "description": "Digital cartography has revolutionized the way that users interact with maps. Instead of users simply obtaining information from maps, digital cartography allows users to contribute information to maps. This exhibition examines the uses of digital maps as platforms of communication by focusing on the website and mobile application of Google Maps. It looks at how this application enables and encourages not only navigation, but also exploration, contribution, and customization. The dimensions of the exhibit are 16 feet by 70 feet, the model is 8 inches by 35 inches.",
   "images": [
     {
-      "full": "components/images/fullsize/of-the-world-exhibit/exhibit-flat.jpg",
-      "thumbnail": "components/images/thumbnails/exhibit-flat.png"
-    },
-    {
       "full": "components/images/fullsize/of-the-world-exhibit/exhibit-model.jpg",
       "thumbnail": "components/images/thumbnails/exhibit-model.png"
     },
     {
-      "full": "components/images/fullsize/of-the-world-exhibit/exhibit-title.jpg",
-      "thumbnail": "components/images/thumbnails/exhibit-title.png"
+      "full": "components/images/fullsize/of-the-world-exhibit/exhibit-flat.jpg",
+      "thumbnail": "components/images/thumbnails/exhibit-flat.png"
     },
     {
       "full": "components/images/fullsize/of-the-world-exhibit/exhibit-detail.jpg",
       "thumbnail": "components/images/thumbnails/exhibit-detail.png"
-    },
-    {
-      "full": "components/images/fullsize/of-the-world-exhibit/lines.jpg",
-      "thumbnail": "components/images/thumbnails/lines.png"
     },
     {
       "full": "components/images/fullsize/of-the-world-exhibit/people.jpg",
@@ -31,6 +23,14 @@
     {
       "full": "components/images/fullsize/of-the-world-exhibit/cameras.jpg",
       "thumbnail": "components/images/thumbnails/cameras.png"
+    },
+    {
+      "full": "components/images/fullsize/intervention2.jpg",
+      "thumbnail": "components/images/thumbnails/intervention2.png"
+    },
+    {
+      "full": "components/images/fullsize/intervention3.jpg",
+      "thumbnail": "components/images/thumbnails/intervention3.png"
     }
   ]
 }
