@@ -1,0 +1,20 @@
+{
+  "title": "Of the World, By the World Posters",
+  "date": "Fall 2015",
+  "dimensions": "24 in x 36 in",
+  "description": "These posters were created as promotions for the “Of the World, By the World” exhibition. Google Maps, highlighted by the exhibition, allows users to participate in the global effort of creating a photographic and comprehensive map of the world. These advertisements display the same concept in a different, non-digital context. The actual maps in the composition are being completed by a variety of imperfect and incomplete drawings done by people. ",
+  "images": [
+    {
+      "full": "components/images/fullsize/of-the-world-poster/poster1.jpg",
+      "thumbnail": "components/images/thumbnails/poster1.png"
+    },
+    {
+      "full": "components/images/fullsize/of-the-world-poster/poster2.jpg",
+      "thumbnail": "components/images/thumbnails/poster2.png"
+    },
+    {
+      "full": "components/images/fullsize/of-the-world-poster/poster3.jpg",
+      "thumbnail": "components/images/thumbnails/poster3.png"
+    }
+  ]
+}

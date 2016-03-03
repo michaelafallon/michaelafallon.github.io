@@ -1,0 +1,24 @@
+<div class="row viewer-content">
+    <div class="col-md-6 col-sm-12">
+        <a target="_blank" ng-href="{{ currentImage.full }}"><img class="portfolio-image img-responsive" ng-src="{{ currentImage.full }}"/></a>
+        <span ng-if="jsonData.images.length > 1">{{ jsonData.images.length }} images available</span>
+        <ul ng-if="jsonData.images.length > 1" class="thumbnail-list">
+            <li ng-repeat="image in jsonData.images">
+                <img class="thumbnail portfolio-thumbnail"
+                     ng-class="{'thumbnail-inactive': image.thumbnail != currentImage.thumbnail, 'thumbnail-hover': image.hovering}"
+                     ng-mouseenter="image.hovering = true"
+                     ng-mouseleave="image.hovering = false"
+                     ng-click="changeImage(image)"
+                     ng-src="{{ image.thumbnail }}"/>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <span class="viewer viewer-title">{{ jsonData.title }}</span>
+        <span class="viewer viewer-date">{{ jsonData.date }}</span>
+        <span class="viewer viewer-dimensions"><span
+                class="text-bold">Dimensions</span>: {{ jsonData.dimensions }}</span>
+        <span class="viewer viewer-description"><span
+                class="text-bold">Description</span>: {{ jsonData.description }}</span>
+    </div>
+</div>

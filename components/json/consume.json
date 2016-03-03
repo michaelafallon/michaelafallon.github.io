@@ -1,0 +1,16 @@
+{
+  "title": "Consume",
+  "date": "Spring 2015",
+  "dimensions": "18 in x 24 in",
+  "description": "A study focused on changing the meaning of a word based on the context. These two compositions compare the meaning of \"Consume\" in these two contexts: modern day consumerism and the natural food web.",
+  "images": [
+    {
+      "full": "components/images/fullsize/consume/diva.jpg",
+      "thumbnail": "components/images/thumbnails/diva.jpg"
+    },
+    {
+      "full": "components/images/fullsize/consume/bird.png",
+      "thumbnail": "components/images/thumbnails/bird.jpg"
+    }
+  ]
+}

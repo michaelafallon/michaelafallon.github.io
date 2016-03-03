@@ -1,0 +1,16 @@
+{
+  "title": "SNAFU",
+  "date": "Fall 2015",
+  "dimensions": "420mm x 600mm",
+  "description": "By definition, a snafu is a mistake, a situation that has been messed up. This composition illustrates this word in a technological context. I began this process by placing the word “snafu” strategically within a photograph I had taken. Then, I opened up the binary of the image and began making changes to manipulate and damage the file. Spontaneous moments of the image failing were captured and then complied in a new composition. The use of genuine computer glitches captures the lack of control one has when a computer experiences an error.",
+  "images": [
+    {
+      "full": "components/images/fullsize/snafu.jpg",
+      "thumbnail": "components/images/thumbnails/snafu.png"
+    },
+    {
+      "full": "components/images/fullsize/snafu-process.jpg",
+      "thumbnail": "components/images/thumbnails/snafu-process.png"
+    }
+  ]
+}

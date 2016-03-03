@@ -1,0 +1,185 @@
+/* app css stylesheet */
+
+*, h1, h2, h3, body {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    /*color: #F8F9FA;*/
+}
+
+a {
+    color: #855162;
+}
+
+a:hover {
+    color: #855162;
+}
+
+a:visited {
+    color: #855162;
+}
+
+a:active {
+    color: #855162;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #afaba6;
+}
+
+.footer {
+    bottom: 0;
+    height: 60px;
+    position: absolute;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .pull-sm-right {
+        float: right;
+    }
+}
+
+@media (max-width: 767px) {
+    .hide-xs {
+        display: none;
+    }
+}
+
+.no-bottom-margin {
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+ul.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+ul.navigation > li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul.navigation > li:last-child {
+    margin-right: 0px;
+}
+
+.navigation-link {
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.navigation-link-muted {
+    font-size: 1.4em;
+    font-weight: 300;
+    /*color: #e6e7e8;*/
+    color: #ffffff;
+}
+
+.view-content {
+    margin-top: 20px;
+}
+
+.portfolio-image {
+    max-height: 700px;
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+}
+
+.headshot {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+div.aboutme {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clearDiv {
+    height: 20px;
+}
+
+span.viewer {
+    display: block;
+}
+
+span.viewer-title {
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+span.viewer-date {
+    margin-bottom: 10px;
+}
+
+span.viewer-dimensions {
+    margin-bottom: 10px;
+}
+
+span.viewer-description {
+
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.text-muted {
+    /*color: #e6e7e8;*/
+}
+
+.portfolio-thumbnail {
+    height: 70px;
+    width: 70px;
+}
+
+ul.thumbnail-list {
+    list-style: none;
+    padding: 0;
+}
+
+ul.thumbnail-list > li {
+    margin-right: 5px;
+    display: inline-block;;
+}
+
+ul.thumbnail-list > li:last-child {
+    margin-right: 0;
+}
+
+.thumbnail-inactive {
+    background-color: transparent;
+    border: none;
+}
+
+.thumbnail-hover {
+    background-color: #FFFFFF;
+}
+
+hr.content-divider {
+    clear: both;
+}
+
+div.about > p{
+    font-size: 1.5em;
+}
+
+.name {
+    color: #ffffff;
+}
+
+.viewer-content {
+
+}
