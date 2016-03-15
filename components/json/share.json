@@ -5,28 +5,28 @@
   "description": " A catalog designed for a conference on the topic of Collaborative Consumption. The conference brings together a range of speakers to share about their experience with and contribution to the collaborative economy. The catalog gives conference attendees background information on the speakers as well as supplemental articles written by and about the speakers.",
   "images": [
     {
-      "full": "components/images/fullsize/share/share-contents.JPG",
-      "thumbnail": "components/images/thumbnails/share-contents.png"
-    },
-    {
       "full": "components/images/fullsize/share/share-cover.JPG",
       "thumbnail": "components/images/thumbnails/share-cover.png"
     },
     {
-      "full": "components/images/fullsize/share/share-culture-of-we.JPG",
-      "thumbnail": "components/images/thumbnails/share-culture-of-we.png"
-    },
-    {
-      "full": "components/images/fullsize/share/share-new-york.JPG",
-      "thumbnail": "components/images/thumbnails/share-new-york.png"
+      "full": "components/images/fullsize/share/share-contents.JPG",
+      "thumbnail": "components/images/thumbnails/share-contents.png"
     },
     {
       "full": "components/images/fullsize/share/share-rachel.JPG",
       "thumbnail": "components/images/thumbnails/share-rachel.png"
     },
     {
+      "full": "components/images/fullsize/share/share-culture-of-we.JPG",
+      "thumbnail": "components/images/thumbnails/share-culture-of-we.png"
+    },
+    {
       "full": "components/images/fullsize/share/share-travis.JPG",
       "thumbnail": "components/images/thumbnails/share-travis.png"
+    },
+    {
+      "full": "components/images/fullsize/share/share-new-york.JPG",
+      "thumbnail": "components/images/thumbnails/share-new-york.png"
     }
   ]
 }

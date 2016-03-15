@@ -5,24 +5,24 @@
   "description": "A foldable map designed to illustrate the technology available at NC State University's Hunt Library, and describe how this technology is used and not used by the users. The map also explains the motivation behind the user's choices of technology.",
   "images": [
     {
+      "full": "components/images/fullsize/technology/tech-closed.jpg",
+      "thumbnail": "components/images/thumbnails/tech-closed.png"
+    },
+    {
       "full": "components/images/fullsize/technology/tech.jpg",
       "thumbnail": "components/images/thumbnails/tech.png"
     },
     {
-      "full": "components/images/fullsize/technology/tech-back.jpg",
-      "thumbnail": "components/images/thumbnails/tech-back.png"
-    },
-    {
-      "full": "components/images/fullsize/technology/tech-closed.jpg",
-      "thumbnail": "components/images/thumbnails/tech-closed.png"
+      "full": "components/images/fullsize/technology/tech-part-open.jpg",
+      "thumbnail": "components/images/thumbnails/tech-part-open.png"
     },
     {
       "full": "components/images/fullsize/technology/tech-front.jpg",
       "thumbnail": "components/images/thumbnails/tech-front.png"
     },
     {
-      "full": "components/images/fullsize/technology/tech-part-open.jpg",
-      "thumbnail": "components/images/thumbnails/tech-part-open.png"
+      "full": "components/images/fullsize/technology/tech-back.jpg",
+      "thumbnail": "components/images/thumbnails/tech-back.png"
     }
   ]
 }
