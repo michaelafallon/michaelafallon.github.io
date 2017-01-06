@@ -102,6 +102,9 @@ ul.navigation {
     max-height: 700px;
     margin-bottom: 30px;
     background-color: #FFFFFF;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
 }
 
 .pink {
