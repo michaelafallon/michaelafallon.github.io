@@ -34,7 +34,7 @@ body {
     background-color: #ffffff;
 }
 
-header {
+.alternate-bg {
     background-color: #f3f3f3;
 }
 
@@ -152,34 +152,6 @@ span.viewer-description {
     /*color: #e6e7e8;*/
 }
 
-.portfolio-thumbnail {
-    height: 70px;
-    width: 70px;
-}
-
-ul.thumbnail-list {
-    list-style: none;
-    padding: 0;
-}
-
-ul.thumbnail-list > li {
-    margin-right: 5px;
-    display: inline-block;;
-}
-
-ul.thumbnail-list > li:last-child {
-    margin-right: 0;
-}
-
-.thumbnail-inactive {
-    background-color: transparent;
-    border: none;
-}
-
-.thumbnail-hover {
-    background-color: #FFFFFF;
-}
-
 hr.content-divider {
     clear: both;
 }
@@ -189,7 +161,11 @@ div.about {
 }
 
 .headshot-container {
-    padding-left: 0px;
+    padding-left: 0;
+}
+
+.image-row {
+    padding: 10px 0;
 }
 
 .viewer-content {

@@ -1,7 +1,24 @@
-<div class="row viewer-content">
-    <div class="col-md-8 col-sm-12">
-        <span class="viewer viewer-title">{{ jsonData.title }}</span>
-        <span class="viewer viewer-date"><em>{{ jsonData.date }}</em></span>
-        <span class="viewer viewer-description"><span ng-bind-html="renderHtml(jsonData.description)"></span></span>
+<div class="container">
+    <div class="row viewer-content">
+        <div class="col-md-8 col-sm-12">
+            <span class="viewer viewer-title">{{ jsonData.title }}</span>
+            <span class="viewer viewer-date"><em>{{ jsonData.date }}</em></span>
+            <span class="viewer viewer-description"><span ng-bind-html="renderHtml(jsonData.description)"></span></span>
+        </div>
     </div>
+</div>
+
+<div class="alternate-bg">
+    <div class="container">
+        <div class="row image-row">
+            <img src="components/images/projects/revolutions/revolutions-image1.jpg" class="img-responsive col-md-6"/>
+            <img src="components/images/projects/revolutions/revolutions-image2.jpg" class="img-responsive col-md-6"/>
+        </div>
+
+        <div class="row image-row">
+            <img src="components/images/projects/revolutions/revolutions-image3.jpg" class="img-responsive col-md-6"/>
+            <img src="components/images/projects/revolutions/revolutions-image4.jpg" class="img-responsive col-md-6"/>
+        </div>
+    </div>
+
 </div>
