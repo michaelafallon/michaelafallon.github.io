@@ -25,4 +25,6 @@ angular.module('myApp.viewer', ['ngRoute'])
             return $sce.trustAsHtml(html_code);
         };
 
+        $scope.fragmentFile = "fragments/" + $routeParams.id + ".html";
+
     }]);

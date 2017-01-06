@@ -174,3 +174,55 @@ div.about {
 .viewer-content {
 
 }
+
+/* Image placement */
+@media (min-width: 992px) {
+
+    .relative {
+        position: relative;
+    }
+
+    .absolute {
+        position: absolute;
+    }
+
+    .padding-15 {
+        padding-right: 15px;
+    }
+
+    img.prcv-1 {
+        top: 0;
+        left: 0;
+        width: 50%;
+    }
+
+    img.prcv-2 {
+        width: 49%;
+        vertical-align: top;
+    }
+
+    img.prcv-3 {
+        width: 66%;
+        top: -130px;
+    }
+
+    img.prcv-4 {
+        width: 33%;
+        top: -100px;
+    }
+
+    img.prcv-5 {
+        width: 33%;
+        top: -305px;
+    }
+
+    img.prcv-6 {
+        /*width: 66%;*/
+        top: -80px;
+        padding-left: 15px;
+    }
+
+    div.prcv-container-1 {
+        top: -60px;
+    }
+}
