@@ -4,7 +4,10 @@
 angular.module('myApp', [
     'ngRoute',
     'myApp.services',
-    'myApp.portfolio'
+    'myApp.portfolio',
+    'myApp.aboutme',
+    'myApp.resume',
+    'myApp.viewer'
 ]).
     config(['$routeProvider', function ($routeProvider) {
         $routeProvider.otherwise({redirectTo: '/portfolio'});

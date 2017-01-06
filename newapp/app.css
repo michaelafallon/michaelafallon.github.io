@@ -38,6 +38,10 @@ header {
     background-color: #f3f3f3;
 }
 
+.header-row {
+    padding-top: 1rem;
+}
+
 .footer {
     bottom: 0;
     height: 60px;
@@ -62,7 +66,7 @@ header {
 }
 
 .logo-container {
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 .no-bottom-margin {
@@ -80,16 +84,12 @@ ul.navigation {
     padding: 0;
 }
 
-
 .navigation-link {
-    font-size: 1.4em;
-    font-weight: 300;
     color: #000000;
 }
 
 .navigation-link-muted {
     font-size: 1.4em;
-    font-weight: 300;
     /*color: #e6e7e8;*/
     color: #ffffff;
 }
@@ -129,14 +129,15 @@ span.viewer {
 span.viewer-title {
     font-weight: 600;
     font-size: 1.25em;
+    margin-bottom: 5px;
 }
 
 span.viewer-date {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 span.viewer-dimensions {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 span.viewer-description {
@@ -183,8 +184,12 @@ hr.content-divider {
     clear: both;
 }
 
-div.about > p{
-    font-size: 1.5em;
+div.about {
+    padding-top: 100px;
+}
+
+.headshot-container {
+    padding-left: 0px;
 }
 
 .viewer-content {
