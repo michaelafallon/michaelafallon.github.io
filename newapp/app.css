@@ -175,7 +175,28 @@ div.about {
 
 }
 
+.back, .back:hover, .back:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.back > img {
+    height: 3em;
+    display: inline-block;
+}
+
+.back > span {
+    display: inline-block;
+
+}
+
+.back-container {
+    margin-bottom: 1em;
+}
+
 /* Image placement */
+
+/** PRCV */
 @media (min-width: 992px) {
 
     .relative {
@@ -225,4 +246,29 @@ div.about {
     div.prcv-container-1 {
         top: -60px;
     }
+}
+
+/** Revolutions */
+div.img-grid-table > .row > div > img{
+    margin-bottom: 30px;
+}
+
+/** Selfie */
+img.selfie-1 {
+    width: 50%;
+}
+
+/** Retrace */
+.retrace-video {
+    padding: 0 50px 20px 50px;
+}
+
+/** Moving Type */
+.type-video {
+    padding: 0 50px 20px 50px;
+}
+
+/** Warrior */
+img.warrior-1 {
+    width: 50%;
 }
