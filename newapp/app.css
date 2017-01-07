@@ -194,6 +194,12 @@ div.about {
     margin-bottom: 1em;
 }
 
+/** Resume */
+img.resume {
+    width: 100%;
+    padding: 25px 0;
+}
+
 /* Image placement */
 
 /** PRCV */
