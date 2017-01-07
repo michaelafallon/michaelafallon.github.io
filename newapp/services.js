@@ -47,8 +47,7 @@ angular.module('myApp.services', ['ngRoute'])
             {
                 id: "moving-type",
                 title: "Moving Typography",
-                description: "A publication analyzing the design structure and aesthetic of <em>Metropolis</em> magazine. " +
-                "The analysis publication is designed in light of <em>Metropolis</em>.",
+                description: "An exploration in dynamic typography. The videos shows the navigation from a table of contents to the body text or an article.",
                 date: "Fall 2016"
             },
             {
@@ -62,7 +61,9 @@ angular.module('myApp.services', ['ngRoute'])
             {
                 id: "retrace",
                 title: "Retrace Raleigh",
-                description: "Description",
+                description: "The challenge  was to create something that enhanced the experience of a house museum in " +
+                "downtown Raleigh, so that it would be a more attractive sight. An app, foldable map, " +
+                "and interactive memory archive were created to tie this sight into more historic places in downtown Raleigh.",
                 date: "Fall 2016"
             },
             {
@@ -75,7 +76,7 @@ angular.module('myApp.services', ['ngRoute'])
             },
             {
                 id: "warrior",
-                title: "Warrior Girl",
+                title: "Warrior Girl & City Print",
                 description: "Three-color linoleum block print.",
                 date: "Spring 2013"
             }
