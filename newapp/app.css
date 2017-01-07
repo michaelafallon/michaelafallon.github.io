@@ -66,7 +66,7 @@ body {
 }
 
 .logo-container {
-    padding-top: 3rem;
+    padding-top: 5rem;
 }
 
 .no-bottom-margin {
@@ -86,6 +86,7 @@ ul.navigation {
 
 .navigation-link {
     color: #000000;
+    font-size: 1.75rem;
 }
 
 .navigation-link-muted {
@@ -161,6 +162,7 @@ hr.content-divider {
 
 div.about {
     padding-top: 100px;
+    font-size: 1.25em;
 }
 
 .headshot-container {
@@ -262,6 +264,7 @@ div.img-grid-table > .row > div > img{
 /** Selfie */
 img.selfie-1 {
     width: 50%;
+    padding-bottom: 30px;
 }
 
 /** Retrace */
@@ -277,4 +280,15 @@ img.selfie-1 {
 /** Warrior */
 img.warrior-1 {
     width: 50%;
+    padding-bottom: 30px;
+}
+
+/** Wedding */
+img.wedding-drink {
+    top: -200px;
+}
+
+img.wedding-favor {
+    left: 66%;
+    top: -200px;
 }
