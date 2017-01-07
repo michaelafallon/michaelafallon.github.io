@@ -18,33 +18,43 @@
     <link rel="stylesheet" href="app.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro:300,600" rel="stylesheet" type='text/css'>
-    
+    <!--<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-<div id="content" class="container" ng-controller="HeaderCtrl">
+<header class="navbar navbar-static-top alternate-bg">
+    <div class="container">
+        <div class="row header-row">
+            <div class=" col-sm-9 logo-container">
+                <img src="components/images/logo.svg" class="logo"/>
+            </div>
+
+            <div class="col-sm-3">
+                <ul class="navigation pull-sm-right" ng-controller="HeaderCtrl">
+                    <li><a href="#/portfolio"><span class="navigation-link" ng-class="getClass('/portfolio')">portfolio</span></a></li>
+                    <li><a href="#/resume"><span class="navigation-link" ng-class="getClass('/resume')">r&egrave;sum&egrave;</span></a></li>
+                    <li><a href="#/aboutme"><span class="navigation-link" ng-class="getClass('/aboutme')">about me</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="content" ng-controller="HeaderCtrl">
     <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
         your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <h2 class="no-bottom-margin name">Michaela Fallon</h2>
-    <span class="navigation-link-muted hide-xs">{{ currentPage }}</span>
-
-    <ul class="navigation pull-sm-right">
-        <li><a href="#/portfolio"><span class="navigation-link">portfolio</span></a></li>
-        <li><a href="#/aboutme"><span class="navigation-link">about me</span></a></li>
-    </ul>
-
-    <hr class="content-divider"/>
+    <!--<hr class="content-divider"/>-->
 
     <div class="view-content" ng-view></div>
 </div>
 
 <footer class="footer">
     <div class="container">
-        <span class="text-muted">Copyright 2016 Michaela Fallon</span>
+        <span class="text-muted">Copyright 2017 Michaela Fallon</span>
         <span class="text-muted pull-right">All Rights Reserved</span>
     </div>
 </footer>
@@ -60,6 +70,7 @@
 <script src="services.js"></script>
 <script src="portfolio/portfolio.js"></script>
 <script src="aboutme/aboutme.js"></script>
+<script src="resume/resume.js"></script>
 <script src="viewer/viewer.js"></script>
 </body>
 </html>

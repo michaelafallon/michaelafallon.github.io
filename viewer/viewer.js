@@ -9,21 +9,22 @@ angular.module('myApp.viewer', ['ngRoute'])
         });
     }])
 
-    .controller('ViewerCtrl', ['$scope', '$routeParams', '$http', function ($scope, $routeParams, $http) {
-        var id = $routeParams.id + ".json";
+    .controller('ViewerCtrl', ['$scope', '$routeParams', '$http', '$sce', 'Data', function ($scope, $routeParams, $http, $sce, Data) {
 
-        $http({
-            method: 'GET',
-            url: 'components/json/' + id
-        }).then(function successCallback(response) {
-            $scope.jsonData = response.data;
-            $scope.currentImage = response.data.images[0];
-        }, function errorCallback(response) {
-            console.error(response);
+        angular.forEach(Data, function(image) {
+            console.log($routeParams.id);
+            console.log(image.id);
+
+            if ($routeParams.id == image.id) {
+                $scope.jsonData = image;
+            }
         });
 
+        $scope.renderHtml = function(html_code)
+        {
+            return $sce.trustAsHtml(html_code);
+        };
 
-        $scope.changeImage = function(image) {
-            $scope.currentImage = image;
-        }
+        $scope.fragmentFile = "fragments/" + $routeParams.id + ".html";
+
     }]);

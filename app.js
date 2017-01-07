@@ -6,6 +6,7 @@ angular.module('myApp', [
     'myApp.services',
     'myApp.portfolio',
     'myApp.aboutme',
+    'myApp.resume',
     'myApp.viewer'
 ]).
     config(['$routeProvider', function ($routeProvider) {
@@ -22,6 +23,11 @@ angular.module('myApp', [
             });
 
             return title;
+        };
+
+        $scope.getClass = function (path) {
+            console.log("Location is " + $location.path());
+            return ($location.path().substr(0, path.length) === path) ? 'active' : '';
         };
 
         $rootScope.$on("$routeChangeSuccess", function (event, next, current) {
