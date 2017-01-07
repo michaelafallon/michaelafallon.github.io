@@ -319,6 +319,11 @@ img.selfie-1 {
     }
 }
 
+img.warrior-1 {
+    padding-bottom: 30px;
+}
+
+
 /** Wedding */
 @media (min-width: 992px) {
 
