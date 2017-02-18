@@ -1,4 +1,3 @@
-
 /* app css stylesheet */
 
 *, h1, h2, h3, body {
@@ -143,8 +142,8 @@ ul.navigation {
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
     /*filter: brightness(0.6);*/
     /*-webkit-filter: brightness(0.6);*/
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+    opacity: 0.3;
+    filter: alpha(opacity=30);
 }
 
 
@@ -155,7 +154,7 @@ ul.navigation {
     font-size: 2em;
     background-color: transparent;
     color: #FFF;
-    padding: 2em 0;
+    padding: 1em 0;
     opacity: 0;
     filter: alpha(opacity=0);
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;

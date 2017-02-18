@@ -1,15 +1,15 @@
 angular.module('myApp.services', ['ngRoute'])
     .factory('Images', [function () {
         return [
-            {id: "prcv", title: "PRCV Exhibit", thumbnail: "prcv-preview.png"},
-            {id: "revolutions", title: "Revolutions Magazine", thumbnail: "revolutions-preview.jpg"},
-            {id: "bobolinks", title: "Bobolinks Website", thumbnail: "bobolinks-preview.png"},
-            {id: "metropolis", title: "Metropolis Magazine", thumbnail: "metropolis-preview.jpg"},
-            {id: "retrace", title: "Retrace Raleigh", thumbnail: "retrace-preview.jpg"},
-            {id: "wedding", title: "Wedding Package", thumbnail: "wedding-preview.png"},
-            {id: "selfie", title: "Watercolor Selfie", thumbnail: "selfie-preview.png"},
-            {id: "tech", title: "Knowledge Map", thumbnail: "tech-preview.png"},
-            {id: "warrior", title: "Warrior Girl", thumbnail: "warrior-preview.png"}
+            {id: "prcv", title: "PRCV", subtitle: "Museum Exhibition", thumbnail: "prcv-preview.png"},
+            {id: "revolutions", title: "Revolutions", subtitle: "Publication Design", thumbnail: "revolutions-preview.jpg"},
+            {id: "bobolinks", title: "Bobolinks", subtitle: "Collaborative Online Database", thumbnail: "bobolinks-preview.png"},
+            {id: "metropolis", title: "Metropolis", subtitle: "Publication Analysis and Design", thumbnail: "metropolis-preview.jpg"},
+            {id: "retrace", title: "Retrace Raleigh", subtitle: "Enhancing Museum Interactions", thumbnail: "retrace-preview.jpg"},
+            {id: "wedding", title: "Wedding Package", subtitle: "", thumbnail: "wedding-preview.png"},
+            {id: "selfie", title: "Selfie", subtitle: "A watercolor study", thumbnail: "selfie-preview.png"},
+            {id: "tech", title: "Knowledge Map", subtitle: "", thumbnail: "tech-preview.png"},
+            {id: "warrior", title: "Warrior Girl and City Print", subtitle: "", thumbnail: "warrior-preview.png"}
         ];
     }])
     .factory('Data', [function () {
