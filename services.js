@@ -85,7 +85,7 @@ angular.module('myApp.services', ['ngRoute'])
             {
                 id: "warrior",
                 title: "Warrior Girl & City Print",
-                description: "Three-color linoleum block print.",
+                description: "Three-color linoleum block print, and an ink monoprint.",
                 date: "Spring 2013",
                 collaborators: ""
             }
