@@ -1,15 +1,15 @@
 angular.module('myApp.services', ['ngRoute'])
     .factory('Images', [function () {
         return [
-            {id: "prcv", title: "", thumbnail: "prcv-preview.png"},
-            {id: "revolutions", title: "", thumbnail: "revolutions-preview.png"},
-            {id: "selfie", title: "", thumbnail: "selfie-preview.png"},
-            {id: "metropolis", title: "", thumbnail: "metropolis-preview.png"},
-            {id: "moving-type", title: "", thumbnail: "moving-type-preview.png"},
-            {id: "wedding", title: "", thumbnail: "wedding-preview.png"},
-            {id: "retrace", title: "", thumbnail: "retrace-preview.png"},
-            {id: "tech", title: "", thumbnail: "tech-preview.png"},
-            {id: "warrior", title: "", thumbnail: "warrior-preview.png"}
+            {id: "prcv", title: "PRCV", subtitle: "Museum Exhibition", thumbnail: "prcv-preview.png"},
+            {id: "revolutions", title: "Revolutions", subtitle: "Publication Design", thumbnail: "revolutions-preview.jpg"},
+            {id: "bobolinks", title: "Bobolinks", subtitle: "Collaborative Online Database", thumbnail: "bobolinks-preview.png"},
+            {id: "metropolis", title: "Metropolis", subtitle: "Publication Analysis and Design", thumbnail: "metropolis-preview.jpg"},
+            {id: "retrace", title: "Retrace Raleigh", subtitle: "Enhancing Museum Interactions", thumbnail: "retrace-preview.jpg"},
+            {id: "wedding", title: "Wedding Package", subtitle: "", thumbnail: "wedding-preview.png"},
+            {id: "selfie", title: "Selfie", subtitle: "A watercolor study", thumbnail: "selfie-preview.png"},
+            {id: "tech", title: "Knowledge Map", subtitle: "", thumbnail: "tech-preview.png"},
+            {id: "warrior", title: "Warrior Girl and City Print", subtitle: "", thumbnail: "warrior-preview.png"}
         ];
     }])
     .factory('Data', [function () {
@@ -49,11 +49,11 @@ angular.module('myApp.services', ['ngRoute'])
                 collaborators: "In collaboration with Courtney Banning and Emma Wegmiller"
             },
             {
-                id: "moving-type",
-                title: "Moving Typography",
-                description: "An exploration in dynamic typography. The videos shows the navigation from a table of contents to the body text or an article.",
-                date: "Fall 2016",
-                collaborators: ""
+                id: "bobolinks",
+                title: "Bobolinks",
+                description: "Bobolinks is an online database designed to allow students from different majors within a college connect with each other to collaborate on projects. Students can create or browse for a project, based on their interests and needs within a project. The website has an accompanying mobile application. ",
+                date: "Spring 2016",
+                collaborators: "In collaboration with Tara Sullivan"
             },
             {
                 id: "wedding",
