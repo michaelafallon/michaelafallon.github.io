@@ -2,7 +2,7 @@
     <div class="row viewer-content">
         <div class="col-md-8 col-sm-12">
             <span class="viewer viewer-title">{{ jsonData.title }}</span>
-            <span class="viewer viewer-date"><em>{{ jsonData.date }}</em></span>
+            <!--<span class="viewer viewer-date"><em>{{ jsonData.date }}</em></span>-->
             <span class="viewer viewer-description"><span ng-bind-html="renderHtml(jsonData.description)"></span></span>
             <span class="viewer viewer-collaborators" ng-if='jsonData.collaborators != ""'><em>{{ jsonData.collaborators }}</em></span>
         </div>

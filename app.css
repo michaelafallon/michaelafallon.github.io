@@ -62,7 +62,7 @@ body {
 }
 
 .logo {
-    height: 2rem;
+    height: 1.25rem;
 }
 
 .logo-container {
@@ -84,20 +84,29 @@ body {
     padding: 10px 0 30px 0;
 }
 
-ul.navigation {
+ul.navbar-nav {
     list-style: none;
-    padding: 0;
+    padding-top: 5rem;
 }
 
-.navigation-link {
+.nav-item {
     color: #000000;
-    font-size: 1.75rem;
+    /*font-size: 1.75rem;*/
 }
 
-.navigation-link-muted {
+.nav-item-muted {
     font-size: 1.4em;
     /*color: #e6e7e8;*/
     color: #ffffff;
+}
+
+ul.navbar-nav > li {
+    float: left;
+    padding-right: 1em;
+}
+
+ul.navbar-nav > li:last-child {
+    padding-right: 0;
 }
 
 .hovereffect {
@@ -118,8 +127,8 @@ ul.navigation {
     height: 80%;
     left: 10%;
     top: 10%;
-    border-bottom: 1px solid #FFF;
-    border-top: 1px solid #FFF;
+    /*border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;*/
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
     -webkit-transform: scale(0,1);
@@ -218,11 +227,6 @@ ul.navigation {
     margin-bottom: 20px;
 }
 
-div.aboutme {
-    width: 100%;
-    margin: 0 auto;
-}
-
 .clearDiv {
     height: 20px;
 }
@@ -231,7 +235,7 @@ span.viewer {
     display: block;
 }
 
-span.viewer-title {
+.viewer-title {
     font-weight: 600;
     font-size: 1.25em;
     margin-bottom: 5px;
@@ -259,10 +263,6 @@ span.viewer-description {
 
 hr.content-divider {
     clear: both;
-}
-
-div.about {
-    font-size: 1.25em;
 }
 
 @media (min-width: 992px) {
@@ -311,11 +311,6 @@ img.resume {
     width: 100%;
     min-width: 500px;
     padding: 0 0 65px 0;
-}
-
-#resume-download {
-    float: right;
-    font-size: 1.75rem;
 }
 
 /* Image placement */
@@ -432,15 +427,20 @@ img.warrior-1 {
 @media (min-width: 992px) {
 
     img.wedding-drink {
-        top: -200px;
+        top: -175px;
     }
 
     img.wedding-favor {
         left: 66%;
-        top: -200px;
+        top: -175px;
     }
 }
 
 img.wedding-favor {
     padding: 0;
+}
+
+button.fluxify-button {
+    background-color: #aab007;
+    color: #fff;
 }
