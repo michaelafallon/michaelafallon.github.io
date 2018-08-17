@@ -10,13 +10,13 @@ angular.module('myApp', [
     'myApp.viewer'
 ]).
     config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.otherwise({redirectTo: '/portfolio'});
+        $routeProvider.otherwise({ redirectTo: '/portfolio' });
     }]).
     controller('HeaderCtrl', ['$scope', '$rootScope', '$location', '$routeParams', 'Images', function ($scope, $rootScope, $location, $routeParams, Images) {
-        var lookupTitleById = function(imageId) {
+        var lookupTitleById = function (imageId) {
             var title = "";
 
-            angular.forEach(Images, function(image) {
+            angular.forEach(Images, function (image) {
                 if (imageId == image.id) {
                     title = image.title;
                 }
@@ -25,9 +25,11 @@ angular.module('myApp', [
             return title;
         };
 
-        $scope.getClass = function (path) {
+        $scope.getClass = function (path, id) {
             console.log("Location is " + $location.path());
-            return ($location.path().substr(0, path.length) === path) ? 'active' : '';
+            console.log("Path is " + path)
+            console.log("Search is " + $location.search().id)
+            return ($location.path().substr(0, path.length) === path) && $location.search().id == id ? 'active' : '';
         };
 
         $rootScope.$on("$routeChangeSuccess", function (event, next, current) {

@@ -6,7 +6,9 @@
 <!--[if IE 8]>
 <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<html lang="en" ng-app="myApp" class="no-js">
+<!--<![endif]-->
+
 <head>
     <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
     <title>Michaela Fallon | Portfolio</title>
@@ -16,8 +18,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
 
     <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
     <!--<link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">-->
@@ -25,74 +27,88 @@
 
     <!-- Google Fonts -->
     <!--<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet" type="text/css">
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <div class="logo-container">
-            <a href="#/portfolio">
-                <img src="components/images/logo.svg" class="logo"/>
-            </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="logo-container">
+                <a href="#/portfolio">
+                    <img src="components/images/logo.svg" class="logo" />
+                </a>
+            </div>
+
+            <ul class="navbar-nav" ng-controller="HeaderCtrl">
+                <li>
+                    <a href="#/portfolio">
+                        <span class="nav-item" ng-class="getClass('/portfolio', null)">design</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/viewer?id=illustration">
+                        <span class="nav-item" ng-class="getClass('/viewer', 'illustration')">artwork</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/resume">
+                        <span class="nav-item" ng-class="getClass('/resume', null)">resume</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/aboutme">
+                        <span class="nav-item" ng-class="getClass('/aboutme', null)">about me</span>
+                    </a>
+                </li>
+            </ul>
+
         </div>
 
-        <ul class="navbar-nav" ng-controller="HeaderCtrl">
-            <li><a href="#/portfolio"><span class="nav-item"
-                                            ng-class="getClass('/portfolio')">portfolio</span></a></li>
-            <li><a href="#/resume"><span class="nav-item"
-                                         ng-class="getClass('/resume')">r&#233;sum&#233;</span></a></li>
-            <li><a href="#/aboutme"><span class="nav-item"
-                                          ng-class="getClass('/aboutme')">about me</span></a></li>
-        </ul>
-
-    </div>
-
-</nav>
+    </nav>
 
 
-<div id="content" ng-controller="HeaderCtrl">
-    <!--[if lt IE 7]>
+    <div id="content" ng-controller="HeaderCtrl">
+        <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
         your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!--<hr class="content-divider"/>-->
+        <!--<hr class="content-divider"/>-->
 
-    <div class="view-content" ng-view></div>
-</div>
+        <div class="view-content" ng-view></div>
+    </div>
 
-<!--<footer class="footer">-->
+    <!--<footer class="footer">-->
     <!--<div class="container">-->
-        <!--<span class="text-muted">Copyright 2018 Michaela Fallon</span>-->
-        <!--<span class="text-muted pull-right">All Rights Reserved</span>-->
+    <!--<span class="text-muted">Copyright 2018 Michaela Fallon</span>-->
+    <!--<span class="text-muted pull-right">All Rights Reserved</span>-->
     <!--</div>-->
-<!--</footer>-->
-<!-- In production use:
+    <!--</footer>-->
+    <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
 -->
 
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/angular-route/angular-route.min.js"></script>
-<!--<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>-->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <!--<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>-->
 
-<script src="app.js"></script>
-<script src="services.js"></script>
-<script src="portfolio/portfolio.js"></script>
-<script src="aboutme/aboutme.js"></script>
-<script src="resume/resume.js"></script>
-<script src="viewer/viewer.js"></script>
+    <script src="app.js"></script>
+    <script src="services.js"></script>
+    <script src="portfolio/portfolio.js"></script>
+    <script src="aboutme/aboutme.js"></script>
+    <script src="resume/resume.js"></script>
+    <script src="viewer/viewer.js"></script>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

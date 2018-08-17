@@ -3,17 +3,21 @@
         <div class="col-md-8 col-sm-12">
             <span class="viewer viewer-title">{{ jsonData.title }}</span>
             <!--<span class="viewer viewer-date"><em>{{ jsonData.date }}</em></span>-->
-            <span class="viewer viewer-description"><span ng-bind-html="renderHtml(jsonData.description)"></span></span>
-            <span class="viewer viewer-collaborators" ng-if='jsonData.collaborators != ""'><em>{{ jsonData.collaborators }}</em></span>
+            <span class="viewer viewer-description">
+                <span ng-bind-html="renderHtml(jsonData.description)"></span>
+            </span>
+            <span class="viewer viewer-collaborators" ng-if='jsonData.collaborators != ""'>
+                <em>{{ jsonData.collaborators }}</em>
+            </span>
         </div>
     </div>
 </div>
 
-<div class="alternate-bg">
+<div ng-class="{ 'bg-light': !jsonData.whiteBackground }">
     <div class="container">
-        <div class="back-container">
+        <div class="back-container" ng-if="!jsonData.noBackButton">
             <a href="#/portfolio" class="back">
-                <img src="components/images/back-button.svg"/>
+                <img src="components/images/back-button.svg" />
                 <span>Back</span>
             </a>
         </div>
